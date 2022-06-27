@@ -1,0 +1,41 @@
+body {
+    background-color: #121212;
+}
+
+div.hero-static {
+    width: 100%;
+    top: 0px;
+}
+
+div.billboard {
+    width: 100%;
+    height: 20%;
+    background-color: #121212;
+    top: 0%;
+}
+
+div.billboard-info {
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    margin: 0px;
+    color: white;
+    position: absolute;
+}
+
+
+#gradient {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 8%;
+    left: 4%;
+    width: 50%;
+    background-image: linear-gradient(0deg, #121212, transparent 90%)
+}
+
+#playbutton {
+    color: white;
+    background-color: #4285F4;
+
+}
