@@ -1,11 +1,12 @@
 <html lang="de-DE">
 
 <head>
-    <!--website like netflix-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+
 
     <!--import material design components-->
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -16,12 +17,11 @@
 
 <body>
     <div class="billboard">
-        <img
+        <img style="width: 100%; height: auto;"
             src="https://occ-0-1347-1348.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaE9nWp8HMocxYkgPRWQS9nXTBT0Y7-TGBz5E_rOecGTz5Q38jI5h72_-VHvl672As8gAGgjnPyZy99UqRBQdbRhQkO1VR7JIIZd.webp?r=afb">
-        <div class="billboard-info" aria-hidden="true">
+        <div class="billboard-info">
             <div id="gradient"></div>
-            <div class="hero-text">
-                <!--make the font use google font-->
+            <div id="hero-text">
                 <h1 style="font-family:Product Sans">Man vs Bee</h1>
                 <p style="font-family:Product Sans">some description text lorem ipsum.</p>
             </div>
@@ -31,27 +31,16 @@
                 <span class="mdc-button__label">PLAY</span>
             </button>
         </div>
-        </div>
-        <div class="main-content" aria-hidden="true">
-            <div class="slider" id="1">
-                <h3 style="font-family:Product Sans">Continue Watching</h3>
-                <div class="slider-card">
-                    <image
-                        src="https://occ-0-1347-1348.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSxoBrVBYOdSTpa1UxlA6H-rudBy9Vbbr_YicH_Rq-YzliNWVep66u_nLx-Pao2g1Jf1vLWD3H7g8_EYjV4rktJNCL_bvI3ZRZc.webp?r=c15">
-                    </image>
-                </div>
-                <div class="slider-card">
-                    <image
-                        src="https://occ-0-1347-1348.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSxoBrVBYOdSTpa1UxlA6H-rudBy9Vbbr_YicH_Rq-YzliNWVep66u_nLx-Pao2g1Jf1vLWD3H7g8_EYjV4rktJNCL_bvI3ZRZc.webp?r=c15">
-                    </image>
-                </div>
-                <div class="slider-card">
-                    <image
-                        src="https://occ-0-1347-1348.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSxoBrVBYOdSTpa1UxlA6H-rudBy9Vbbr_YicH_Rq-YzliNWVep66u_nLx-Pao2g1Jf1vLWD3H7g8_EYjV4rktJNCL_bvI3ZRZc.webp?r=c15">
-                    </image>
+    </div>
+    <div class="main-content">
+        <div class="slider">
+            <h3 style="font-family:Product Sans">Continue Watching</h3>
+            <div class="previous"></div>
+            <div class="next"></div>
+            <div class="slider-container">
+
             </div>
         </div>
-
     </div>
 </body>
 
